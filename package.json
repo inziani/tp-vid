@@ -1,0 +1,18 @@
+{
+  "name": "tp-vid",
+  "version": "1.0.0",
+  "description": "TypeScript Vid",
+  "main": "app.js",
+  "scripts": {
+    "test": "tptest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "tp-vid"
+  },
+  "keywords": [
+    "tp-vid"
+  ],
+  "author": "inziani",
+  "license": "ISC"
+}
