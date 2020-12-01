@@ -1,20 +1,23 @@
-function add(n1: number, n2: number, showResult: Boolean, phrase: string){
-  const result = n1 + n2;
-  if (showResult){
-    console.log(phrase + '' + result );
-  } else {
-    return result;
-
-  }
-   
+enum Area {MUSIC, ART, DRAMA};
+const person:{
+  name: string;
+  age: number;
+  hobbies: string [];
+  role: [string, number];
+  area: any;
+  
+} =
+{
+  name: 'Malakai',
+  age: 3,
+  hobbies:['Telly', 'running'],
+  role:['author', 2],
+  area: Area.MUSIC
 }
 
-const number1 = 5;
-const number2 = 2.8;
-const printResult = true;
-const resultPhrase = 'Result is';
+console.log(person.name)
 
-add(number1, number2, printResult, resultPhrase);
-
-// console.log(result);
-// console.log(typeof result)
+for (const hobby of person.hobbies){
+  console.log(hobby.toLocaleUpperCase())
+}
+console.log(person.area)
