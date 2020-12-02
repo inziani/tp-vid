@@ -1,23 +1,14 @@
-enum Area {MUSIC, ART, DRAMA};
-const person:{
-  name: string;
-  age: number;
-  hobbies: string [];
-  role: [string, number];
-  area: any;
-  
-} =
-{
-  name: 'Malakai',
-  age: 3,
-  hobbies:['Telly', 'running'],
-  role:['author', 2],
-  area: Area.MUSIC
+function add(n1: number, n2: number){
+  return n1 + n2;
 }
 
-console.log(person.name)
-
-for (const hobby of person.hobbies){
-  console.log(hobby.toLocaleUpperCase())
+function printResult(num: number): void {
+  console.log('Result is '+ '' + num);
 }
-console.log(person.area)
+printResult(add(10, 3));
+
+let combineValues: (a: number, b: number) => number;
+
+combineValues = add;
+console.log(combineValues(45, 25));
+
